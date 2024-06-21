@@ -1,0 +1,252 @@
+*{
+    /*margin: 0;*/
+    /*padding: 0;*/
+    box-sizing: border-box;
+    /*font-family: Roboto , sans-serif;*/
+    color: #444444;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+   background-color: #f5f5f5;
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+
+    width: 67%;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+}
+
+.left{
+    width: 100%;
+    font-weight: bold;
+
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 10px;
+
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 1000px;
+
+
+
+}
+
+.left p{
+    padding: 30px 20px;
+}
+
+.methods{
+    padding: 10px 0;
+}
+
+.methods div{
+    padding: 10px;
+    cursor: pointer;
+    font-size: 15px;
+
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+
+.methods div:hover{
+    box-shadow: 0 0 10px rgba(172,255,47,0.196);
+    background-color: #f0f0f0;
+}
+
+.methods div.active {
+    /*background-color: #ff8fa0;*/
+    background: orange;
+    color: white;
+}
+
+.methods div:after{
+    content: '';
+    display: inline-block;
+    /*color: #ff8fa0;*/
+    color: orange;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 4px 0 4px 4px;
+    /*border-left-color: #ff8fa0;*/
+    border-left-color: orange;
+    margin-left: 10px;
+}
+
+.methods i {
+    margin-right: 10px;
+}
+
+.fa-solid{
+    margin-right: 10px;
+    font-size: 22px;
+    color: #aaaaaa;
+}
+
+.center{
+    width: 50%;
+    border-right: 1px solid #CCCCCC;
+    border-left: 1px solid #CCCCCC;
+    height: 70vh;
+}
+
+.center a{
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right{
+    width: 25%;
+}
+
+.right p{
+    padding: 30px 20px;
+    font-weight: bold;
+}
+
+.details{
+    padding: 20px 20px;
+}
+
+.right a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.card-details{
+    padding: 20px 80px;
+}
+
+.card-details form {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-details p {
+    margin: 5px 0;
+}
+
+
+.card-details input {
+    padding: 10px;
+    border-radius: 4px;
+
+}
+
+
+.card-details .c-number{
+    width: 100%;
+    border: 1px solid #aaaaaa;
+    border-radius: 3px;
+    padding: 0 12px;
+    margin-top: 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input{
+    border: none;
+    border-radius: 3px;
+    outline: none;
+}
+
+.c-details{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.cc-exp{
+    border: 1px solid #aaaaaa;
+    border-radius: 3px;
+    height: 50px;
+    margin-top: 10px;
+    padding: 12px;
+    width: 150px;
+}
+
+.c-details .cvv-box{
+    border: 1px solid #aaaaaa;
+    margin-top: 10px;
+    padding: 12px;
+    height: 50px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cc-cvv{
+    width: 60px;
+}
+
+.email input{
+    width: 100%;
+    border: 1px solid #aaaaaa;
+    border-radius: 3px;
+    padding: 12px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+ .card-details a{
+    width: 100%;
+    border: none;
+    height: 50px;
+    border-radius: 4px;
+    margin-top: 30px;
+    font-size: 18px;
+     color: white;
+    /*background-color: #ff8fa0;*/
+     background-color: orange;
+
+     padding: 10px;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+
+}
+
+
+
+.card-details button:hover{
+    /*background-color: #e07e8f;*/
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+}
+
+.right .details{
+    /*background-color: #e07e8f;*/
+    background-color: orange;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 15px 0;
+}
+

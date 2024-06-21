@@ -1,0 +1,241 @@
+/* Reset and Base Styles */
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --main-color: orange;
+    --text-color: black;
+    --bg-color: white;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 1068px;
+    margin: auto;
+    width: 100%;
+}
+
+section {
+    padding: 4rem 0 3rem;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--bg-color);
+    box-shadow: 0 1px 4px hsl(0 4% 15% / 10%);
+    z-index: 100;
+}
+
+.container-farmacie {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.sigla {
+    font-size: 1.1rem;
+    color: orange;
+    font-weight: 400;
+}
+
+#sigla-cos {
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+#sigla-cos:hover {
+    color: orange;
+}
+
+/* Cosul de Cumparaturi */
+.cos-de-cumparaturi {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 360px;
+    min-height: 100vh;
+    padding: 20px;
+    background: orange;
+    box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+    transition: 0.3s;
+}
+
+.cos-de-cumparaturi.active {
+    right: 0;
+}
+
+.titlu-cos {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-top: 2rem;
+}
+
+.sectiune-cos {
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.imagine-cos {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.sectiune-detalii {
+    display: grid;
+    row-gap: 0.5rem;
+}
+
+.titlu-produs-cos {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.pret-cos {
+    font-weight: 500;
+}
+
+.cantitate-cos {
+    border: 1px solid black;
+    outline-color: #721c24;
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.sterge-cos {
+    font-size: 24px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.total {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid white;
+}
+
+.titlu-total {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.pret-total {
+    margin-left: 0.5rem;
+    color: #FFFFFF;
+}
+
+.buton-cumpara {
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    background: #FFFFFF;
+    color: darkorange;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.buton-cumpara:hover {
+    background: salmon;
+    color: #FFFFFF;
+}
+
+#inchide-cos {
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    font-size: 2rem;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.titlu {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: orange;
+}
+
+.cumparaturi {
+    margin-top: 2rem;
+}
+
+.continut-cumparaturi {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    gap: 1.5rem;
+}
+
+.sectiune-produs {
+    position: relative;
+}
+
+.sectiune-produs:hover {
+    padding: 10px;
+    background-color: orange;
+    transition: 0.4s;
+    color: #FFFFFF;
+}
+
+.imagine-produs {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.titlu-produs {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.pret {
+    font-weight: 500;
+}
+
+.adauga-cos {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: var(--main-color);
+    color: #FFFFFF;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.adauga-cos:hover {
+    background-color: #FFFFFF;
+    color: orange;
+    border: 1px solid black;
+}
